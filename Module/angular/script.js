@@ -3,17 +3,12 @@
 (function() {
   var app = angular.module('taskManager', []);
 
-  var taskController = function(Task) {
+  var taskController = function(Task,TaskRepository) {
     var ctrl = this;
 
     ctrl.tasks = [
-      new Task({
-        name: 'task1'
-      }),
-      new Task({
-        name: 'task2',
-        completed: true
-      })
+      new Task(TaskRepository.get(1)),
+      new Task(TaskRepository.get(2))
     ];
   };
 
