@@ -1,5 +1,5 @@
 "use strict";
-//Decorator Pattern
+//Decorator Pattern for Factories.
 
 (function() {
   var app = angular.module('taskManager');
