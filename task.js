@@ -1,3 +1,10 @@
+/**
+ *
+ * Practical Design Patterns in JavaScript
+ *
+ */
+
+
 "use strict";
 
 var task = {};
